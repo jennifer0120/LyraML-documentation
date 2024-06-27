@@ -1,41 +1,21 @@
-# Website
+# Lyra-ML-documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Hosted on https://jennifer0120.github.io/LyraML-documentation/
 
-### Installation
+#### `main`
 
-```
-$ yarn
-```
+- Development branch
 
-### Local Development
+#### `gh-pages`
 
-```
-$ yarn start
-```
+- Deployment branch that hosts the built static files.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+DO NOT MANUALLY PUSH TO THIS BRANCH
 
-### Build
+## Build and Deploy
 
-```
-$ yarn build
-```
+While in `main`, run `npm run deploy` to build onto `gh-pages` and automatically deploy to https://jennifer0120.github.io/LyraML-documentation/
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Local Preview
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+While in any development branch (e.g `main`), run `npm run serve` to run on a localhost (port default: 3000).
